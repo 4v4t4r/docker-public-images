@@ -15,6 +15,11 @@ RUN pip install ravello-sdk
 RUN pip install mockito
 RUN pip install nose
 RUN pip install numpy
+RUN apt-get install -y python-numpy python-scipy python-matplotlib ipython ipython-notebook python-pandas python-sympy python-nose python-sklearn
+
+
+USER root
+RUN adduser jenkins root
 
 # Standard SSH port
 EXPOSE 22
