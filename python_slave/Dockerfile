@@ -13,6 +13,7 @@ RUN pip install fabric
 RUN pip install jprops
 RUN pip install ravello-sdk
 RUN pip install mockito
+RUN pip install nose
 
 # Standard SSH port
 EXPOSE 22
