@@ -19,7 +19,7 @@ RUN apt-get install -y python-numpy python-scipy python-matplotlib ipython ipyth
 
 
 USER root
-RUN adduser jenkins root
+RUN chmod -R 777 /usr/local/lib/python*
 
 # Standard SSH port
 EXPOSE 22
