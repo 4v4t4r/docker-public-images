@@ -14,6 +14,7 @@ RUN pip install jprops
 RUN pip install ravello-sdk
 RUN pip install mockito
 RUN pip install nose
+RUN pip install numpy
 
 # Standard SSH port
 EXPOSE 22
